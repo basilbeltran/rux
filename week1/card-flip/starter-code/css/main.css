@@ -7,7 +7,9 @@
 		-webkit-transform-style
 		-webkit-backface-visibility
 */
-
+.item-wrapper{
+		 perspective: 400px;
+}
 .portfolio-item {
 position:relative;
 transform-style: preserve-3d;
@@ -23,4 +25,8 @@ position:absolute;
 top:0;
 transform: rotateY(180deg);
 backface-visibility: hidden;
+}
+
+.front {
+backface-visibility: hidden;  /* this stops chrome flicker*/
 }
