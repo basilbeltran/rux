@@ -7,3 +7,20 @@
 		-webkit-transform-style
 		-webkit-backface-visibility
 */
+
+.portfolio-item {
+position:relative;
+transform-style: preserve-3d;
+transition: transform 2s;
+}
+
+.portfolio-item:hover {
+transform: rotateY(180deg);
+}
+
+.back {
+position:absolute;
+top:0;
+transform: rotateY(180deg);
+backface-visibility: hidden;
+}
