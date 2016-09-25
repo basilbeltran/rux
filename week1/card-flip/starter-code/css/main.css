@@ -7,13 +7,18 @@
 		-webkit-transform-style
 		-webkit-backface-visibility
 */
+
+.portfolio {
+			   perspective: 400px;   /* why doesnt this work ? */
+}
+
 .item-wrapper{
-		 perspective: 400px;
+perspective: 400px;
 }
 .portfolio-item {
 position:relative;
 transform-style: preserve-3d;
-transition: transform 2s;
+transition: transform 1s;
 }
 
 .portfolio-item:hover {
