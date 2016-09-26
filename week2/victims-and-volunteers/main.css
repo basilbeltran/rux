@@ -1,0 +1,38 @@
+body {
+  /*background-image: url('./tear-down-the-wall.jpg');*/
+  background-color: slateGrey;
+}
+
+main{
+    margin: auto;
+    width:800px;
+    height: 80vh;
+
+    background-color: rgb(236,240,241);
+    color:blue;
+    position: relative;     /* required for aside */
+    top:10px;
+
+}
+
+header {
+  color: black;
+  height: 10vh;
+  /*background-image: url('./wall.jpg');*/
+      border: solid 1px red;
+}
+
+@media (max-width: 800px) {
+
+    figure {
+        flex-wrap: wrap;
+    }
+
+    header {
+        width:100%;
+    }
+
+    section {
+        width:100%;
+    }
+}

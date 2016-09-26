@@ -1,8 +1,8 @@
+function promptUser() {
 
 questions = [];
 experts = [];
 
-//for (var i = 0; i < numVictims; i++) {        // FOR
 var i = 0;
 do{                                             // DO WHILE
   i++;
@@ -23,16 +23,19 @@ while( confirm("ADD AN EXPERT ?") ){     //  WHILE
 }
 
 if (questions != null) {
-  //for(question in questions){
+  //for(question in questions)
   for (var i = 0; i < questions.length; i++) {
-    document.getElementById("divQuestions").innerHTML +=   questions[i].name
-                                                        + " is asking an "
-                                                        + questions[i].urgency
-                                                        + " question related to "
-                                                        + questions[i].category + " : "
-                                                        + questions[i].question+ " </br> ";
+    document.getElementById("divQuestions").innerHTML +=
+       questions[i].name
+      + " is asking an "
+      + questions[i].urgency
+      + " question related to "
+      + questions[i].category + " : "
+      + questions[i].question+ " </br> ";
   }
 }
 
 console.log(questions);
 console.log(experts);
+
+} // end window.onload

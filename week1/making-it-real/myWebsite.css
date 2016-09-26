@@ -2,30 +2,31 @@
 
 body{
     background-color: rgb(127,140,141) ;
+    border: solid 2px red;
 }
 
 main{
     margin: auto;           /*easy way to center*/
-    width:500px; 
+    width:500px;
     /* height: 100vh;           the 100 is a percent of view*/
-    
+
     background-color: rgb(236,240,241);
-    color:white;    
+    color:white;
     position: relative;     /* required for aside */
     top:10px;
 }
 
 aside{
-    width: 180px; 
+    width: 180px;
     height: 200px;
     background-color: rgb(236,240,241);
-    
+
     position: absolute;
     top: 250px;
     left:510px;
-    
+
     color:black;
-}   
+}
 
 aside h4{
     margin: 5px 0px 5px 20px;
@@ -54,8 +55,8 @@ nav{
     height:50px;
 
     font-size: small;     /* "font" very complicated if put lower*/
-    
-    display: flex;        
+
+    display: flex;
     align-items: center;  /* align text vertically */
 }
 
@@ -70,7 +71,7 @@ nav li {
     padding-left: 10px;
 }
 
-nav a { 
+nav a {
     color: rgb(255, 255, 255);
     text-decoration: none;     /* gets rid of the underline*/
 
@@ -100,21 +101,21 @@ figure img{
     color:black;
     width:440px;
     background-color: lightgrey;
-    
+
     /*border: solid 2px red;*/
 }
 
 
-@media (max-width: 500px) {   
-    
+@media (max-width: 500px) {
+
     figure {
     flex-wrap: wrap;
     }
-    
+
     main {
         width:100%;
     }
-    
+
     section {
         width:100%;
     }
