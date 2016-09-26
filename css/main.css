@@ -1,0 +1,34 @@
+/*
+	Put your custom CSS here.
+
+	You may find these CSS3 properties useful:;
+		transition
+		-webkit-transform
+		-webkit-transform-style
+		-webkit-backface-visibility
+*/
+
+.item-wrapper{
+		 perspective: 400px;
+}
+
+.portfolio-item {
+position:relative;
+transform-style: preserve-3d;
+transition: transform 1s;
+}
+
+.portfolio-item:hover {
+transform: rotateY(180deg);
+}
+
+.back {
+position:absolute;
+top:0;
+transform: rotateY(180deg);
+backface-visibility: hidden;
+}
+
+.front {
+backface-visibility: hidden;  /* this stops chrome flicker*/
+}
