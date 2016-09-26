@@ -7,19 +7,11 @@
 		-webkit-transform-style
 		-webkit-backface-visibility
 */
-<<<<<<< HEAD
 
-.portfolio {
-			   perspective: 400px;   /* why doesnt this work ? */
-}
-
-.item-wrapper{
-perspective: 400px;
-=======
 .item-wrapper{
 		 perspective: 400px;
->>>>>>> ca8241dba61adec1ac85a6a31c10cc9ebbbdcad7
 }
+
 .portfolio-item {
 position:relative;
 transform-style: preserve-3d;
