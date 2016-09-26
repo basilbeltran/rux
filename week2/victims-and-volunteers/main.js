@@ -25,12 +25,12 @@ while( confirm("ADD AN EXPERT ?") ){     //  WHILE
 if (questions != null) {
   //for(question in questions){
   for (var i = 0; i < questions.length; i++) {
-    document.getElementById("divQuestions").innerHTML =   questions[i].name
+    document.getElementById("divQuestions").innerHTML +=   questions[i].name
                                                         + " is asking an "
                                                         + questions[i].urgency
                                                         + " question related to "
                                                         + questions[i].category + " : "
-                                                        + questions[i].question;
+                                                        + questions[i].question+ " </br> ";
   }
 }
 
