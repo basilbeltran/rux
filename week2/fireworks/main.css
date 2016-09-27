@@ -1,0 +1,51 @@
+body {
+  /*background-image: url('./tear-down-the-wall.jpg');*/
+  background-color: black;
+}
+
+main{
+    margin: auto;
+    width:800px;
+    height: 100vh;
+
+    background-color: rgb(236,240,241);
+    color:blue;
+    position: relative;     /* required for aside */
+    top:10px;
+
+}
+
+header {
+  background-color: black;
+  color: white;
+  height: 10vh;
+}
+
+section {
+  background-color: rgb(0,124,179);
+  height: 90vh;
+
+}
+
+section img{
+  position:absolute;
+  bottom:0px;
+  width:290px;
+  margin: auto;
+}
+
+
+@media (max-width: 800px) {
+
+    figure {
+        flex-wrap: wrap;
+    }
+
+    header {
+        width:100%;
+    }
+
+    section {
+        width:100%;
+    }
+}
